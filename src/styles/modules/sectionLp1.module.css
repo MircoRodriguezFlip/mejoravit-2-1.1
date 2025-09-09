@@ -1,0 +1,267 @@
+@keyframes scaleCircle {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: scaleX(0.5) rotate(0deg);
+    }
+    to {
+        transform: scaleX(1) rotate(0deg);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: scaleX(0.2) rotate(-15deg);
+    }
+    to {
+        transform: scaleX(1) rotate(-15deg);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('/src/assets/images/fondo-pages.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+    padding-top: 80px;
+}
+
+.sectionTitulo {
+    margin-top: 10px;
+}
+
+.sectionTitulo img {
+    user-select: none;
+    pointer-events: none;
+    width: 290px;
+}
+
+.sectionContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionContenido1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    z-index: -1;
+    transform: scale(0);
+    animation: scaleCircle 0.7s ease-out forwards;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 0px 100px var(--secondary-color));
+    border: none;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.sectionContenido1 img {
+    user-select: none;
+    pointer-events: none;
+    animation: slideInLeft 0.7s ease-out;
+    width: 190px;
+}
+
+.sectionContenido2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color-2);
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.microCont1,
+.microCont2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.microCont1 h1 {
+    z-index: 1;
+    font-size: 28px;
+}
+
+.microCont1 h2 {
+    z-index: 1;
+    font-size: 20px;
+}
+
+.microCont2 img {
+    z-index: 1;
+    pointer-events: none;
+    animation: pulsate 1s infinite ease-in-out;
+    width: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.microCont2 p {
+    z-index: 1;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media (min-width: 576px) {
+    .sectionContenido {
+        flex-direction: row-reverse;
+        margin: 20px 0;
+        margin-bottom: 40px;
+        gap: 10px;
+    }
+
+    .sectionContenido2 {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .sectionContenido1 img {
+        width: 230px;
+    }
+
+    .microCont1 h1 {
+        font-size: 36px;
+    }
+
+    .microCont1 h2 {
+        font-size: 24px;
+    }
+
+    .microCont2 p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionTitulo img {
+        width: 450px;
+    }
+
+    .sectionContenido {
+        margin-bottom: 50px;
+        gap: 50px;
+    }
+
+    .circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .sectionContenido1 img {
+        width: 290px;
+    }
+
+    .microCont1 h1 {
+        font-size: 48px;
+    }
+
+    .microCont1 h2 {
+        font-size: 28px;
+    }
+
+    .microCont2 p {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionTitulo img {
+        width: 600px;
+    }
+
+    .circle {
+        width: 340px;
+        height: 340px;
+    }
+
+    .sectionContenido1 img {
+        width: 380px;
+    }
+
+    .microCont1 h1 {
+        font-size: 60px;
+    }
+
+    .microCont1 h2 {
+        font-size: 32px;
+    }
+
+    .smicroCont2 p {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionTitulo img {
+        width: 750px;
+    }
+
+    .sectionContenido {
+        margin-bottom: 80px;
+    }
+
+    .circle {
+        width: 400px;
+        height: 400px;
+    }
+
+    .sectionContenido1 img {
+        width: 390px;
+    }
+
+    .microCont1 h1 {
+        font-size: 72px;
+    }
+
+    .microCont1 h2 {
+        font-size: 38px;
+    }
+
+    .microCont2 p {
+        font-size: 32px;
+    }
+}
