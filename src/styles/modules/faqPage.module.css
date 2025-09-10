@@ -1,0 +1,164 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.sectionTitulo {
+    text-align: center;
+    color: var(--text-color-2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.sectionTitulo img {
+    user-select: none;
+    pointer-events: none;
+    width: 290px;
+}
+
+.sectionTitulo h1 {
+    font-size: 22px;
+}
+
+.sectionTitulo h2 {
+    font-size: 20px;
+}
+
+.sectionContenido {
+    z-index: 1;
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+.sectionContenido h3 {
+    color: var(--text-color-2);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sectionContenido p,
+.sectionContenido li {
+    color: var(--text-color-2);
+}
+
+.sectionContainer hr,
+.sectionContenido hr {
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    opacity: 0.5;
+}
+
+.sectionContainer hr {
+    width: 80%;
+    margin-top: 40px;
+}
+
+.sectionContenido hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.sectionContenido ul {
+    margin-left: 15px;
+}
+
+.sectionContenido li {
+    margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+    .sectionContenido {
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionTitulo {
+        margin-bottom: 30px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 28px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 22px;
+    }
+
+    .sectionContenido {
+        width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionTitulo img {
+        width: 450px;
+    }
+
+    .sectionContenido {
+        margin-bottom: 30px;
+    }
+
+    .sectionContainer hr {
+        margin-top: 50px;
+    }
+
+    .sectionContenido hr {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContenido {
+        width: 900px;
+    }
+
+    .sectionContenido h3 {
+        font-size: 24px;
+    }
+
+    .sectionContenido p,
+    .sectionContenido li {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionTitulo img {
+        width: 596px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 52px;
+    }
+
+    .sectionTitulo h2,
+    .sectionContenido h3 {
+        font-size: 28px;
+    }
+
+    .sectionContenido {
+        margin-bottom: 40px;
+        width: 1100px;
+    }
+
+    .sectionContenido p,
+    .sectionContenido li {
+        font-size: 22px;
+    }
+
+    .sectionContainer hr {
+        margin-top: 80px;
+    }
+
+    .sectionContenido hr {
+        margin: 40px 0;
+    }
+}
