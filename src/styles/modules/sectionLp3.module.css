@@ -1,0 +1,172 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sectionTitulo {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 10px;
+    width: 320px;
+}
+
+.sectionTitulo h2 {
+    font-size: 24px;
+}
+
+.sectionContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.requisitosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 320px;
+}
+
+.requisitosContainer ul li {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.requisitosContainer ul li::marker,
+.palabraDestacada {
+    color: var(--text-color);
+}
+
+.sectionContenido img {
+    filter: drop-shadow(0px 0px 200px var(--text-color));
+    user-select: none;
+    pointer-events: none;
+    margin-top: 20px;
+    width: 150px;
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo {
+        width: 500px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 30px;
+    }
+
+    .sectionContenido {
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .sectionContenido img {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .requisitosContainer {
+        width: 400px;
+    }
+
+    .requisitosContainer ul li {
+        font-size: 20px;
+    }
+
+    .sectionContenido img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionTitulo {
+        width: 700px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 42px;
+    }
+
+    .sectionContenido {
+        gap: 40px;
+    }
+
+    .requisitosContainer {
+        width: 568px;
+    }
+
+    .requisitosContainer ul li {
+        margin-top: 25px;
+        font-size: 22px;
+    }
+
+    .sectionContenido img {
+        width: 200px;
+        margin-bottom: -30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContenido img {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding-bottom: 50px;
+    }
+
+    .sectionTitulo {
+        width: 900px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 52px;
+    }
+
+    .sectionContenido {
+        gap: 120px;
+    }
+
+    .requisitosContainer {
+        width: 619px;
+    }
+
+    .requisitosContainer ul li {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .sectionContenido img {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionTitulo {
+        width: 1100px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 62px;
+    }
+
+    .sectionContenido {
+        gap: 220px;
+    }
+
+    .requisitosContainer ul li {
+        margin-top: 40px;
+    }
+
+    .sectionContenido img {
+        width: 310px;
+        margin-bottom: -50px;
+    }
+}

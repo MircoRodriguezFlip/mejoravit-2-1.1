@@ -183,7 +183,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
     .sectionContainer {
         padding-top: 50px;
     }
@@ -193,7 +193,7 @@
     }
 
     .sectionContenido {
-        gap: 250px;
+        gap: 240px;
     }
 
     .contenido1,
