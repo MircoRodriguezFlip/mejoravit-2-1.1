@@ -1,0 +1,1 @@
+import{r as c}from"./index-B0CmBSx6.js";const i="/mejoravit-2-1.1/assets/logo-home-DKKDNsEc.webp",f=(o,r={threshold:.5})=>{const e=c.useMemo(()=>new IntersectionObserver(s=>{s.forEach(t=>{t.isIntersecting&&(t.target.classList.add(o),e.unobserve(t.target))})},r),[o,r]);return c.useEffect(()=>()=>{e.disconnect()},[e]),s=>{s&&e.observe(s)}};export{i as l,f as u};
