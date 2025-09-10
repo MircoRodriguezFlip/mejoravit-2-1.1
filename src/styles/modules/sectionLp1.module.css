@@ -47,7 +47,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -2;
+    z-index: 0;
+    min-height: 100vh;
     padding-top: 80px;
 }
 
@@ -210,7 +211,7 @@
 
 @media (min-width: 1400px) {
     .sectionTitulo img {
-        width: 600px;
+        width: 596px;
     }
 
     .circle {
@@ -236,10 +237,6 @@
 }
 
 @media (min-width: 1700px) {
-    .sectionTitulo img {
-        width: 750px;
-    }
-
     .sectionContenido {
         margin-bottom: 80px;
     }

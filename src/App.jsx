@@ -21,7 +21,7 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/mejoravit-2-1.1/">
             <ScrollToTop />
 
             <Navbar />
