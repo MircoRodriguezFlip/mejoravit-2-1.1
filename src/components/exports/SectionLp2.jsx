@@ -6,7 +6,11 @@ import { BotonNav } from '../utils/BotonNav';
 
 import { burbujas } from '../utils/burbujas';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 export const SectionLp2 = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
@@ -16,7 +20,7 @@ export const SectionLp2 = () => {
             <div className={styles.sectionContenido}>
                 <div className={styles.contenido1}>
                     {burbujas.map(({ id, text }) => (
-                        <div key={id} className={styles.burbujasContainer}>
+                        <div ref={objRef} key={id} className={`${styles.burbujasContainer} animacion-der`}>
                             <div className={`${styles.burbujaDialogo} ${styles.burbujaDerecha}`}>
                                 <p className="light-text">{text}</p>
                             </div>
@@ -42,6 +46,8 @@ export const SectionLp2 = () => {
                 </div>
 
                 <img
+                    className="animacion-izq"
+                    ref={objRef}
                     src={ImgSection}
                     alt="Mujer apuntando con el dedo las características principales de crédito Mejoravit"
                     loading="lazy"

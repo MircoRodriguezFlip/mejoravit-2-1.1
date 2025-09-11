@@ -1,0 +1,118 @@
+.form {
+    z-index: 1;
+    position: relative;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.camposObligatorios {
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.campoPrecalificarForm {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.campoPrecalificarForm select,
+.campoPrecalificarForm input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.campoPrecalificarForm label {
+    z-index: 1;
+}
+
+.formControl {
+    z-index: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    padding: 4px 0;
+    margin-bottom: 10px;
+    background-color: var(--text-color);
+    color: var(--text-color-2);
+    border: 3px solid var(--primary-color);
+    font-size: 18px;
+    resize: none;
+}
+
+.formControl:focus {
+    outline: none;
+}
+
+.labelError {
+    color: red;
+}
+
+.contentEnvio {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.mensajeErrorGeneral {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-left: 5px;
+}
+
+.mensajeErrorGeneral p {
+    position: absolute;
+    z-index: 1;
+    color: red;
+    margin-top: 5px;
+}
+
+.imgForm {
+    position: absolute;
+    bottom: -35px;
+    right: -35px;
+    width: 130px;
+    user-select: none;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+@media (min-width: 768px) {
+    .imgForm {
+        bottom: 0px;
+        right: -230px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .imgForm {
+        right: -280px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .formControl {
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 1700px) {
+    .campoPrecalificarForm,
+    .formControl {
+        font-size: 20px;
+    }
+}

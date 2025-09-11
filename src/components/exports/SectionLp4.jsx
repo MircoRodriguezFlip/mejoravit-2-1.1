@@ -4,7 +4,11 @@ import ImgSection from '../../assets/images/img-section-4-lp-1.webp';
 
 import { BotonNav } from '../utils/BotonNav';
 
+import useAnimationScroll from '../../hooks/UseAnimationScroll';
+
 export const SectionLp4 = () => {
+    const objRef = useAnimationScroll('slide-in');
+
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
@@ -20,11 +24,13 @@ export const SectionLp4 = () => {
 
                     <p className="light-text">¡No pierdas la oportunidad de agilizar tu trámite de manera fácil y segura!</p>
 
-                    <BotonNav dataCta="home-btn-1" />
+                    <BotonNav dataCta="home-btn-3" />
                 </div>
 
                 <div className={styles.contenido2}>
                     <img
+                        className="animacion-izq"
+                        ref={objRef}
                         src={ImgSection}
                         alt="Mujer apuntando con el dedo las características principales de crédito Mejoravit"
                         loading="lazy"
